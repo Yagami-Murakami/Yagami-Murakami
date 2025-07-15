@@ -24,4 +24,5 @@ Desenvolvedor interessado em automação, Python e infraestrutura. Contribuindo 
 
 ⚡ Curiosidade: Gosto de otimizar workflows com scripts!
 ![Linguagens Mais Usadas](https://github-readme-stats.vercel.app/api/top-langs/?username=Yagami-Murakami&layout=compact&theme=dracula)
+![Streak de Contribuições](https://github-readme-streak-stats.herokuapp.com/?user=Yagami-Murakami&theme=dracula)
 
