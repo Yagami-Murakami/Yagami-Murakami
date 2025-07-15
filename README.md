@@ -20,6 +20,6 @@ Desenvolvedor interessado em automação, Python e infraestrutura. Contribuindo 
 
 ## 📫 Contato
 - GitHub: @Yagami-Murakami
-- Email: [seu-email@example.com]
+- Email: [sixvap@gmail.com]
 
 ⚡ Curiosidade: Gosto de otimizar workflows com scripts!
