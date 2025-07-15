@@ -30,7 +30,7 @@ Desenvolvedor interessado em automação, Python e infraestrutura. Contribuindo 
 
 ## 🐍 Contribuições em Estilo Cobrinha
 <p align="center">
-  <img src="https://github.com/Yagami-Murakami/Yagami-Murakami/blob/output/snake.svg" alt="Snake animation">
+  <img src="https://github.com/Yagami-Murakami/Yagami-Murakami/blob/output/github-contribution-grid-snake.svg" alt="Snake animation">
 </p>
 
 ## 🏆 Meus Troféus
