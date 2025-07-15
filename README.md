@@ -28,6 +28,11 @@ Desenvolvedor interessado em automação, Python e infraestrutura. Contribuindo 
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Yagami-Murakami&theme=dracula" alt="Streak de Contribuições">
 </p>
 
+## 🐍 Contribuições em Estilo Cobrinha
+<p align="center">
+  <img src="https://github.com/Yagami-Murakami/Yagami-Murakami/blob/output/snake.svg" alt="Snake animation">
+</p>
+
 ## 🏆 Meus Troféus
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
