@@ -23,4 +23,5 @@ Desenvolvedor interessado em automação, Python e infraestrutura. Contribuindo 
 - Email: [sixvap@gmail.com]
 
 ⚡ Curiosidade: Gosto de otimizar workflows com scripts!
-![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=Yagami-Murakami&show_icons=true&theme=dracula)
+![Linguagens Mais Usadas](https://github-readme-stats.vercel.app/api/top-langs/?username=Yagami-Murakami&layout=compact&theme=dracula)
+
