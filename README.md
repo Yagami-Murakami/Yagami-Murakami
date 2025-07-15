@@ -1,16 +1,25 @@
-## Hi there 👋
+# Olá, sou Yagami-Murakami! 👋
 
-<!--
-**Yagami-Murakami/Yagami-Murakami** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Desenvolvedor interessado em automação, Python e infraestrutura. Contribuindo para open-source e projetos pessoais.
 
-Here are some ideas to get you started:
+## 🛠 Habilidades
+- Linguagens: Python, Shell, HTML
+- Ferramentas: Docker, Jupyter Notebook
+- Áreas: Automação de arquivos, provisionamento de servidores e sites simples
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🔭 Projetos em Destaque
+- **RENOMA_KJR**: Script Python para renomear e converter vídeos/áudios em lote[2].
+- **provisionamento-servidor-web**: Automação de servidores web em Shell[2].
+- **dio-lab-open-source**: Contribuição em lab open-source da DIO[2].
+
+## 🌱 O Que Estou Aprendendo
+- Mais sobre Docker e desenvolvimento web.
+
+## 📊 Minhas Estatísticas
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Yagami-Murakami&show_icons=true&theme=radical)
+
+## 📫 Contato
+- GitHub: @Yagami-Murakami
+- Email: [seu-email@example.com]
+
+⚡ Curiosidade: Gosto de otimizar workflows com scripts!
