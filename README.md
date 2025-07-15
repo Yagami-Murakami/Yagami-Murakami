@@ -16,14 +16,24 @@ Desenvolvedor interessado em automação, Python e infraestrutura. Contribuindo 
 - Mais sobre Docker e desenvolvimento web.
 
 ## 📊 Minhas Estatísticas
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Yagami-Murakami&show_icons=true&theme=radical)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Yagami-Murakami&show_icons=true&theme=radical" alt="GitHub Stats">
+</p>
 
-![Linguagens Mais Usadas](https://github-readme-stats.vercel.app/api/top-langs/?username=Yagami-Murakami&layout=compact&theme=dracula)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yagami-Murakami&layout=compact&theme=dracula" alt="Linguagens Mais Usadas">
+</p>
 
-![Streak de Contribuições](https://github-readme-streak-stats.herokuapp.com/?user=Yagami-Murakami&theme=dracula)
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Yagami-Murakami&theme=dracula" alt="Streak de Contribuições">
+</p>
 
 ## 🏆 Meus Troféus
-[![Troféus do GitHub](https://github-profile-trophy.vercel.app/?username=Yagami-Murakami&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+<p align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=Yagami-Murakami&theme=onedark" alt="Troféus do GitHub">
+  </a>
+</p>
 
 ## 📫 Contato
 - GitHub: @Yagami-Murakami
