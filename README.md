@@ -1,42 +1,77 @@
-# Olá, sou Yagami-Murakami! 👋
+<div align="center">
 
-Desenvolvedor interessado em automação, Python e infraestrutura. Contribuindo para open-source e projetos pessoais.
+<img src="https://capsule-render.vercel.app/api?type=waving&height=180&text=Sou%20Yagami&fontAlign=50&fontAlignY=35&color=0:0f172a,100:7c3aed&fontColor=ffffff" />
 
-## 🛠 Habilidades
-- Linguagens: Python, Shell, HTML
-- Ferramentas: Docker, Jupyter Notebook
-- Áreas: Automação de arquivos, provisionamento de servidores e sites simples
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1200&center=true&vCenter=true&width=700&lines=Sou+Yagami;Automacao+%E2%9A%A1+Python+%7C+Shell+%7C+Docker;Infra+e+Workflows+inteligentes" />
 
-## 🔭 Projetos em Destaque
-- **RENOMA_KJR**: Script Python para renomear e converter vídeos/áudios em lote.
-- **provisionamento-servidor-web**: Automação de servidores web em Shell.
-- **dio-lab-open-source**: Contribuição em lab open-source da DIO.
-
-## 🌱 O Que Estou Aprendendo
-- Mais sobre Docker e desenvolvimento web.
-
-## 📊 Minhas Estatísticas
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Yagami-Murakami&show_icons=true&theme=radical" alt="GitHub Stats">
+<p>
+  Desenvolvedor focado em <b>automação</b>, <b>Python</b> e <b>infra</b>.<br/>
+  Transformo tarefas repetitivas em scripts e workflows.
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yagami-Murakami&layout=compact&theme=dracula" alt="Linguagens Mais Usadas">
+<p>
+  <img src="https://img.shields.io/badge/Python-0f172a?style=for-the-badge&logo=python&logoColor=fff" />
+  <img src="https://img.shields.io/badge/Shell-0f172a?style=for-the-badge&logo=gnubash&logoColor=fff" />
+  <img src="https://img.shields.io/badge/Docker-0f172a?style=for-the-badge&logo=docker&logoColor=fff" />
+  <img src="https://img.shields.io/badge/Jupyter-0f172a?style=for-the-badge&logo=jupyter&logoColor=fff" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Yagami-Murakami&theme=dracula" alt="Streak de Contribuições">
-</p>
-
-## 🏆 Meus Troféus
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=Yagami-Murakami&theme=onedark" alt="Troféus do GitHub">
+<p>
+  <a href="https://github.com/Yagami-Murakami">
+    <img src="https://img.shields.io/badge/GitHub-7c3aed?style=for-the-badge&logo=github&logoColor=fff" />
+  </a>
+  <a href="mailto:sixvap@gmail.com">
+    <img src="https://img.shields.io/badge/Email-7c3aed?style=for-the-badge&logo=gmail&logoColor=fff" />
+  </a>
+  <a href="https://www.linkedin.com/in/ant%C3%B4nio-jonas-louren%C3%A7o-cruz-yagami/">
+    <img src="https://img.shields.io/badge/LinkedIn-7c3aed?style=for-the-badge&logo=linkedin&logoColor=fff" />
   </a>
 </p>
 
-## 📫 Contato
-- GitHub: @Yagami-Murakami
-- Email: sixvap@gmail.com
+<img src="https://komarev.com/ghpvc/?username=Yagami-Murakami&style=for-the-badge&color=7c3aed" />
 
-⚡ Curiosidade: Gosto de otimizar workflows com scripts!
+</div>
+
+---
+
+## 🚀 Projetos em destaque
+
+<div align="center">
+  <a href="https://github.com/Yagami-Murakami/RENOMA_KJR">
+    <img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=Yagami-Murakami&repo=RENOMA_KJR&theme=tokyonight&hide_border=true" />
+  </a>
+  <a href="https://github.com/Yagami-Murakami/provisionamento-servidor-web">
+    <img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=Yagami-Murakami&repo=provisionamento-servidor-web&theme=tokyonight&hide_border=true" />
+  </a>
+</div>
+
+<div align="center">
+  <a href="https://github.com/Yagami-Murakami/dio-lab-open-source">
+    <img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=Yagami-Murakami&repo=dio-lab-open-source&theme=tokyonight&hide_border=true" />
+  </a>
+</div>
+
+---
+
+## 📊 Estatísticas
+
+<div align="center">
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Yagami-Murakakmi&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yagami-Murakami&layout=compact&theme=tokyonight&hide_border=true" />
+</div>
+
+---
+
+## 🐍 Contribuições
+
+<div align="center">
+  <img alt="snake animation" src="https://raw.githubusercontent.com/Yagami-Murakami/Yagami-Murakami/output/github-contribution-grid-snake.svg" />
+</div>
+
+---
+
+## 🤝 Contato
+
+- GitHub: **@Yagami-Murakami**
+- Email: **sixvap@gmail.com**
+- LinkedIn: **Antônio Jonas Lourenço Cruz (Yagami)**
