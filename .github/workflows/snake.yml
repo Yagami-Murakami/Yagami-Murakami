@@ -1,9 +1,9 @@
 name: Generate Snake
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -12,15 +12,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # ✅ Checkout (evita falhas no deploy)
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Generate snake SVG
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: Yagami-Murakami
           outputs: |
             dist/github-contribution-grid-snake.svg
 
+      # ✅ Push para branch "output"
       - name: Publish to output branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: output
           folder: dist
+          clean: true
