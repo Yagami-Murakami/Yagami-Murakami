@@ -37,31 +37,58 @@
 ## 🚀 Projetos em destaque
 
 <div align="center">
-  <a href="https://github.com/Yagami-Murakami/RENOMA_KJR">
-    <img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=Yagami-Murakami&repo=RENOMA_KJR&theme=tokyonight&hide_border=true" />
-  </a>
-  <a href="https://github.com/Yagami-Murakami/provisionamento-servidor-web">
-    <img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=Yagami-Murakami&repo=provisionamento-servidor-web&theme=tokyonight&hide_border=true" />
-  </a>
-</div>
 
-<div align="center">
-  <a href="https://github.com/Yagami-Murakami/dio-lab-open-source">
-    <img height="120" src="https://github-readme-stats.vercel.app/api/pin/?username=Yagami-Murakami&repo=dio-lab-open-source&theme=tokyonight&hide_border=true" />
-  </a>
+<a href="https://github.com/Yagami-Murakami/RENOMA_KJR">
+  <img src="https://img.shields.io/badge/RENOMA_KJR-0f172a?style=for-the-badge&logo=github&logoColor=fff" />
+</a>
+<a href="https://github.com/Yagami-Murakami/RENOMA_KJR/stargazers">
+  <img src="https://img.shields.io/github/stars/Yagami-Murakami/RENOMA_KJR?style=for-the-badge&label=Stars&color=7c3aed" />
+</a>
+<a href="https://github.com/Yagami-Murakami/RENOMA_KJR/network/members">
+  <img src="https://img.shields.io/github/forks/Yagami-Murakami/RENOMA_KJR?style=for-the-badge&label=Forks&color=7c3aed" />
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/Yagami-Murakami/provisionamento-servidor-web">
+  <img src="https://img.shields.io/badge/provisionamento--servidor--web-0f172a?style=for-the-badge&logo=github&logoColor=fff" />
+</a>
+<a href="https://github.com/Yagami-Murakami/provisionamento-servidor-web/stargazers">
+  <img src="https://img.shields.io/github/stars/Yagami-Murakami/provisionamento-servidor-web?style=for-the-badge&label=Stars&color=7c3aed" />
+</a>
+<a href="https://github.com/Yagami-Murakami/provisionamento-servidor-web/network/members">
+  <img src="https://img.shields.io/github/forks/Yagami-Murakami/provisionamento-servidor-web?style=for-the-badge&label=Forks&color=7c3aed" />
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/Yagami-Murakami/dio-lab-open-source">
+  <img src="https://img.shields.io/badge/dio--lab--open--source-0f172a?style=for-the-badge&logo=github&logoColor=fff" />
+</a>
+<a href="https://github.com/Yagami-Murakami/dio-lab-open-source/stargazers">
+  <img src="https://img.shields.io/github/stars/Yagami-Murakami/dio-lab-open-source?style=for-the-badge&label=Stars&color=7c3aed" />
+</a>
+<a href="https://github.com/Yagami-Murakami/dio-lab-open-source/network/members">
+  <img src="https://img.shields.io/github/forks/Yagami-Murakami/dio-lab-open-source?style=for-the-badge&label=Forks&color=7c3aed" />
+</a>
+
 </div>
 
 ---
 
-
-
 ## 📊 Estatísticas
 
 <div align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Yagami-Murakami&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yagami-Murakami&layout=compact&theme=tokyonight&hide_border=true" />
-</div>
 
+<img height="170"
+  src="https://streak-stats.demolab.com?user=Yagami-Murakami&theme=tokyonight&hide_border=true" />
+
+<br/><br/>
+
+<img width="900"
+  src="https://github-readme-activity-graph.vercel.app/graph?username=Yagami-Murakami&theme=tokyo-night&hide_border=true" />
+
+</div>
 
 ---
 
