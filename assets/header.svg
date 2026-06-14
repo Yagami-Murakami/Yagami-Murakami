@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="100%" height="100%">
+  <!-- Definitions -->
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&amp;display=swap');
+      .title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        font-size: 38px;
+        fill: url(#titleGradient);
+      }
+      .subtitle {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        fill: #94A3B8;
+      }
+      .highlight {
+        font-weight: 700;
+        fill: #38BDF8;
+      }
+      .tagline {
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        fill: #64748B;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      .background {
+        fill: #0B0F19;
+      }
+      .border-line {
+        stroke: url(#borderGradient);
+        stroke-width: 1.5;
+      }
+      .grid-pattern {
+        fill: none;
+        stroke: #1E293B;
+        stroke-width: 0.5;
+        opacity: 0.6;
+      }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="50%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#9333EA" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="220" rx="12" class="background" />
+
+  <!-- Abstract Tech Grid -->
+  <g class="grid-pattern">
+    <path d="M 0,40 L 800,40 M 0,80 L 800,80 M 0,120 L 800,120 M 0,160 L 800,160 M 0,200 L 800,200" />
+    <path d="M 80,0 L 80,220 M 160,0 L 160,220 M 240,0 L 240,220 M 320,0 L 320,220 M 400,0 L 400,220 M 480,0 L 480,220 M 560,0 L 560,220 M 640,0 L 640,220 M 720,0 L 720,220" />
+  </g>
+
+  <!-- Glowing Wave/Orbs -->
+  <circle cx="750" cy="50" r="120" fill="#38BDF8" opacity="0.12" filter="blur(40px)" />
+  <circle cx="680" cy="180" r="90" fill="#818CF8" opacity="0.08" filter="blur(30px)" />
+
+  <!-- Content -->
+  <g transform="translate(50, 0)">
+    <!-- Tagline -->
+    <text x="0" y="65" class="tagline">SYSTEMS ARCHITECT &amp; FULL-STACK DEVELOPER</text>
+    
+    <!-- Title -->
+    <text x="0" y="115" class="title">YAGAMI MURAKAMI</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="152" class="subtitle">Building secure, scalable, and high-performance applications.</text>
+    
+    <!-- Badges / Info in SVG -->
+    <text x="0" y="185" class="tagline" font-size="11">
+      <tspan class="highlight">● STATUS: </tspan> OPEN FOR COLLABORATION
+      <tspan class="highlight" dx="20">● LOCATION: </tspan> BR / UTC-3
+    </text>
+  </g>
+
+  <!-- Bottom Border Highlight -->
+  <line x1="12" y1="219" x2="788" y2="219" class="border-line" />
+</svg>

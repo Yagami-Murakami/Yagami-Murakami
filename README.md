@@ -1,171 +1,67 @@
-# 📟 SYSTEM CONNECTION ESTABLISHED // GIBSON MAINFRAME
+<p align="center">
+  <img src="assets/header.svg" width="100%" alt="Yagami Murakami - Systems Architect &amp; Developer" />
+</p>
+
+## 👋 Hello, I'm Yagami Murakami
+
+I am a **Full-Stack Software Engineer** and **Systems Architect** focused on designing, building, and deploying secure, high-performance web applications and containerized environments. I blend modern frontend architectures with highly resilient backend microservices.
+
+- 🚀 Currently working on full-stack web architectures and automated security tooling.
+- ⚙️ Specializing in clean, type-safe development, REST/GraphQL APIs, and Docker deployments.
+- ⚡ Strong advocate for optimized performance, clean code structures, and solid devops practices.
+
+---
+
+### 🛠️ Core Technologies
 
 <p align="center">
-  <img src="assets/terminal.svg" width="800" alt="Gibson Mainframe Boot Sequence" />
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=VT323&amp;size=24&amp;duration=3500&amp;pause=1000&amp;color=39FF14&amp;background=08090d00&amp;center=true&amp;vCenter=true&amp;width=700&amp;height=45&amp;lines=HACK+THE+PLANET;CONNECTING+TO+GIBSON+MAINFRAME...;ACCESS+GRANTED+OPERATOR+YAGAMI;MESS+WITH+THE+BEST+DIE+LIKE+THE+REST" alt="Hacker Typing Sequence" />
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Yagami-Murakami&amp;color=39FF14&amp;style=flat-square&amp;label=SYS_ACCESS_COUNT&amp;labelColor=12151f" alt="System Access Counter" />
-</p>
-
----
-
-### 📟 SYSTEM LOGS / WHOAMI
-
-```bash
-yagami@gibson:~$ cat operator_profile.log
-[+] RUNNER:       Yagami Murakami
-[+] ALIAS:        Zero Cool // Acid Burn // Yagami
-[+] FIRMWARE:     Linux Kernel 1.9.95-gibson-x64
-[+] CLASS:        Full-Stack Cyber Security Engineer
-[+] BATTERY:      [████████████████████] 100% (CHARGING)
-[+] OBJECTIVE:    Hack the planet and build resilient applications.
-```
-
----
-
-### 🕹️ GIBSON RETRO ARCADE // COME-COME
-
-```bash
-yagami@gibson:~$ ./play_arcade.sh --game pacman
-Connecting to ROM storage... OK.
-Booting Cabinet Emulator...
-  
-  ᗧ  •  •  •  🍬  •  •  •  👻  👻   [ LEVEL 01 ]
-
-[+] SCORE: 014820  //  [+] HIGH SCORE: 999950  //  [+] STATUS: RUNNING
-```
-
----
-
-### 👥 THE COHORT NETWORK (THE CREW)
-
-```
-yagami@gibson:~$ show_active_nodes --crew
-OPERATOR             STATUS    SPECIALTY
-───────────────────────────────────────────────────────────────
-Zero Cool            ACTIVE    Kernel exploits, Dow Jones manipulation
-Acid Burn            ACTIVE    Cyberdeck design, high-level compiler optimization
-Cereal Killer        ACTIVE    Telephony phreaking, network traffic sniffing
-Lord Nikon           ACTIVE    Photographic memory, Gibson 3D data-node mapping
-Phantom Phreak       ACTIVE    Dial-tone replication, trunk-line routing bypass
-Yagami-Murakami      HOST      Full-stack architectures & Gibson vulnerability scanning
-```
-
----
-
-### ☣️ DA VINCI EXTORTION SCHEME (MALWARE ANALYSIS)
-
-A snippet of the extortion virus injected by **The Plague** into the Ellingson Mineral Corporation mainframe, recovered by our cohort:
-
-```c
-/*
- * Da Vinci Virus - Extortion Payload v1.995
- * Targets: Ellingson Mineral Corp ballast automation systems.
- * Objective: Capsize oil fleet unless decryption keys are provided.
- */
-#include <ellingson_ballast.h>
-
-void trigger_ballast_overload() {
-    int current_tilt = 12;
-    int capsize_limit = 45; // Tanker tips over at 45 degrees
-    
-    while (current_tilt < capsize_limit) {
-        flood_ballast_valves(TANKER_FLEET_ID, 11);
-        current_tilt += 11;
-        
-        // Check if operator issues relief valve vent command
-        if (check_operator_override() == "VENT") {
-            vent_ballast_valves(TANKER_FLEET_ID);
-            log_status("BALLAST TANKS VENTED. SYSTEM STABILIZED.");
-            return; // Virus bypassed!
-        }
-    }
-    
-    capsize_fleet(TANKER_FLEET_ID);
-}
-```
-
----
-
-### 🛡️ CYBERNETIC SPECIALTIES (SKILLS)
-
-#### 💻 Programming Languages & Frameworks
-<p align="left">
-  <img src="https://img.shields.io/badge/JavaScript-08090d?style=flat-square&amp;logo=javascript&amp;logoColor=39FF14&amp;labelColor=08090d" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TypeScript-08090d?style=flat-square&amp;logo=typescript&amp;logoColor=39FF14&amp;labelColor=08090d" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Python-08090d?style=flat-square&amp;logo=python&amp;logoColor=39FF14&amp;labelColor=08090d" alt="Python" />
-  <img src="https://img.shields.io/badge/HTML5-08090d?style=flat-square&amp;logo=html5&amp;logoColor=39FF14&amp;labelColor=08090d" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-08090d?style=flat-square&amp;logo=css3&amp;logoColor=39FF14&amp;labelColor=08090d" alt="CSS3" />
-  <img src="https://img.shields.io/badge/Node.js-08090d?style=flat-square&amp;logo=nodedotjs&amp;logoColor=39FF14&amp;labelColor=08090d" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express-08090d?style=flat-square&amp;logo=express&amp;logoColor=39FF14&amp;labelColor=08090d" alt="Express" />
-  <img src="https://img.shields.io/badge/React-08090d?style=flat-square&amp;logo=react&amp;logoColor=39FF14&amp;labelColor=08090d" alt="React" />
-</p>
-
-#### 🔧 Tools, Database & Cyber Operations
-<p align="left">
-  <img src="https://img.shields.io/badge/Linux-08090d?style=flat-square&amp;logo=linux&amp;logoColor=39FF14&amp;labelColor=08090d" alt="Linux" />
-  <img src="https://img.shields.io/badge/Git-08090d?style=flat-square&amp;logo=git&amp;logoColor=39FF14&amp;labelColor=08090d" alt="Git" />
-  <img src="https://img.shields.io/badge/Docker-08090d?style=flat-square&amp;logo=docker&amp;logoColor=39FF14&amp;labelColor=08090d" alt="Docker" />
-  <img src="https://img.shields.io/badge/Bash-08090d?style=flat-square&amp;logo=gnu-bash&amp;logoColor=39FF14&amp;labelColor=08090d" alt="Bash" />
-  <img src="https://img.shields.io/badge/MongoDB-08090d?style=flat-square&amp;logo=mongodb&amp;logoColor=39FF14&amp;labelColor=08090d" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/PostgreSQL-08090d?style=flat-square&amp;logo=postgresql&amp;logoColor=39FF14&amp;labelColor=08090d" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/VS_Code-08090d?style=flat-square&amp;logo=visual-studio-code&amp;logoColor=39FF14&amp;labelColor=08090d" alt="VS Code" />
-</p>
-
----
-
-### 📡 ACTIVE CONSOLE OPERATIONS (PROJECTS)
-
-- **📂 [da-vinci-virus](https://github.com/Yagami-Murakami)** — Automated cyberdeck monitoring and terminal layout. `[██████████░░░░░░] 60% Decrypted`
-- **📂 [gibson-overload](https://github.com/Yagami-Murakami)** — Subverting the mainframe through parallel port socket injections. `[███████████████░] 90% Compromised`
-- **📂 [cookie-monster-bypass](https://github.com/Yagami-Murakami)** — Memory interceptor program designed to pacify malicious warning popups. `[████████████████] 100% Bypassed`
-
----
-
-### 🕹️ INTERACTIVE PROFILE CONSOLE
-
-Want to hack the Gibson yourself? Grab your cyberdeck and run this sequence in your local terminal:
-
-```bash
-# Clone this operator node
-git clone https://github.com/Yagami-Murakami/Yagami-Murakami.git
-
-# Enter the node
-cd Yagami-Murakami
-
-# Authorize the script execution
-chmod +x hack_gibson.sh
-
-# Run the mainframe bypass sequence
-./hack_gibson.sh
-```
-
-> [!TIP]
-> **Windows Operator?** Open PowerShell and initiate the terminal override using this instruction:
-> ```powershell
-> powershell -ExecutionPolicy Bypass -File .\hack_gibson.ps1
-> ```
-
----
-
-### 📊 CYBER DECK PERFORMANCE STATS
-
-<p align="center">
-  <a href="https://github.com/Yagami-Murakami">
-    <img src="https://github-readme-stats.vercel.app/api?username=Yagami-Murakami&amp;show_icons=true&amp;bg_color=08090d&amp;title_color=39ff14&amp;icon_color=ffb000&amp;text_color=e0e0e0&amp;border_color=39ff14" alt="Yagami's GitHub Stats" width="48%" />
-  </a>
-  <a href="https://github.com/Yagami-Murakami">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yagami-Murakami&amp;layout=compact&amp;bg_color=08090d&amp;title_color=39ff14&amp;icon_color=ffb000&amp;text_color=e0e0e0&amp;border_color=39ff14" alt="Yagami's Top Languages" width="48%" />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,ts,python,react,nextjs,nodejs,express,mongodb,postgres,docker,aws,linux,git,vscode" alt="My Tech Stack" />
   </a>
 </p>
 
 ---
 
+### 📂 Highlighted Projects & Case Studies
+
+Here is a selection of my key projects. These demonstrate my design choices in system architecture, microservices, and client-side interfaces:
+
+| 🛡️ Secure API Gateway | 🛸 Containerized SaaS Boilerplate |
+| :--- | :--- |
+| A robust microservice gateway equipped with JWT authentication, rate-limiting layers, and automatic CORS controls. Built to act as the primary security shield for internal service networks. | A production-ready boilerplate template for shipping Next.js applications, equipped with pre-configured Docker containers, database setups, and Tailwind layouts. |
+| `Node.js` `Express` `Redis` `Docker` `JWT` | `Next.js` `TypeScript` `PostgreSQL` `Docker` `Tailwind` |
+| [📂 View Repository](https://github.com/Yagami-Murakami) | [📂 View Repository](https://github.com/Yagami-Murakami) |
+
+| 📡 System Telemetry Monitor | 🔐 Decryption Engine CLI |
+| :--- | :--- |
+| Real-time hardware performance telemetry and network socket monitoring dashboard. Provides instant feedback on CPU/memory usage and network activity. | A highly optimized multi-threaded CLI scanner tool designed to identify open ports, locate system vulnerabilities, and check local credentials. |
+| `React` `Socket.io` `Node.js` `Chart.js` | `Python` `Security` `Threading` `CLI` |
+| [📂 View Repository](https://github.com/Yagami-Murakami) | [📂 View Repository](https://github.com/Yagami-Murakami) |
+
+---
+
+### 📈 GitHub Ecosystem Metrics
+
 <p align="center">
-  <i>"Mess with the best, die like the rest. Hack the planet!" - 1995</i>
+  <a href="https://github.com/Yagami-Murakami">
+    <img src="https://github-readme-stats.vercel.app/api?username=Yagami-Murakami&amp;show_icons=true&amp;bg_color=0b0f19&amp;title_color=38bdf8&amp;icon_color=818cf8&amp;text_color=94a3b8&amp;border_color=1e293b" alt="Yagami's GitHub Stats" width="48%" />
+  </a>
+  <a href="https://github.com/Yagami-Murakami">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Yagami-Murakami&amp;theme=tokyonight&amp;bg_color=0b0f19&amp;ring=38bdf8&amp;fire=818cf8&amp;currStreakNum=94a3b8&amp;sideNums=94a3b8&amp;stroke=1e293b&amp;currStreakLabel=38bdf8&amp;sideLabels=64748b" alt="Yagami's Streak Stats" width="48%" />
+  </a>
+</p>
+
+---
+
+### 📫 Let's Connect
+
+Feel free to reach out to discuss collaboration opportunities, systems design, or full-stack software development:
+
+<p align="left">
+  <a href="mailto:sixvap@gmail.com">
+    <img src="https://img.shields.io/badge/Email-sixvap@gmail.com-0b0f19?style=flat-square&amp;logo=gmail&amp;logoColor=38bdf8&amp;labelColor=0b0f19" alt="Email" />
+  </a>
+  <a href="https://github.com/Yagami-Murakami">
+    <img src="https://img.shields.io/badge/GitHub-Yagami--Murakami-0b0f19?style=flat-square&amp;logo=github&amp;logoColor=38bdf8&amp;labelColor=0b0f19" alt="GitHub" />
+  </a>
 </p>
