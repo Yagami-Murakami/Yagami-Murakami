@@ -4,11 +4,11 @@
 
 ## 👋 Olá, eu sou o Yagami Murakami
 
-Sou **Engenheiro de Software Full-Stack** e **Arquiteto de Sistemas** focado em projetar, desenvolver e implantar aplicações web robustas, de alta performance e ambientes conteinerizados. Combino arquiteturas modernas de frontend com microsserviços altamente resilientes no backend.
+Sou **Desenvolvedor Python** e **Especialista em Automação de Sistemas** focado em projetar, automatizar e estruturar fluxos de trabalho eficientes, integrações em nuvem (AWS) e scripts avançados em PowerShell e Bash. Convertendo ideias em código funcional enquanto aprendo algo novo todo dia. 🚀
 
-- 🚀 Atualmente trabalhando em arquiteturas web full-stack de alto impacto e segurança de dados.
-- ⚙️ Especialista em desenvolvimento estritamente tipado, APIs REST/GraphQL e implantações com Docker.
-- ⚡ Defensor de performance otimizada, código limpo e boas práticas de devops.
+- 🚀 Atualmente desenvolvendo automações com Python e IA aplicadas a negócios e segurança.
+- ⚙️ Especialista em desenvolvimento focado em infraestrutura de TI, scripting e Cloud Computing.
+- ⚡ Defensor de performance otimizada, código limpo e boas práticas de DevSecOps.
 
 ---
 
@@ -24,19 +24,19 @@ Sou **Engenheiro de Software Full-Stack** e **Arquiteto de Sistemas** focado em 
 
 ### 📂 Projetos em Destaque & Estudos de Caso
 
-Abaixo está uma seleção dos meus principais projetos. Eles demonstram minhas escolhas de design em arquitetura de sistemas, microsserviços e interfaces de usuário:
+Abaixo estão os meus principais projetos ativos no GitHub, com foco em inteligência artificial, automação em nuvem, ferramentas de administração e segurança:
 
-| 🛡️ Gateway de API Seguro | 🛸 Boilerplate SaaS Conteinerizado |
+| 🤖 [copiloto-vendas-ia](https://github.com/Yagami-Murakami/copiloto-vendas-ia) | ☁️ [dio-lambda-s3-automation](https://github.com/Yagami-Murakami/dio-lambda-s3-automation) |
 | :--- | :--- |
-| Um gateway de microsserviço robusto equipado com autenticação JWT, camadas de limitação de taxa (rate-limiting) e controles automáticos de CORS. Projetado para servir como escudo de segurança principal. | Um template pronto para produção para implantação de aplicações Next.js, equipado com containers Docker pré-configurados, banco de dados relacional e layouts em Tailwind. |
-| `Node.js` `Express` `Redis` `Docker` `JWT` | `Next.js` `TypeScript` `PostgreSQL` `Docker` `Tailwind` |
-| [📂 Ver Repositório](https://github.com/Yagami-Murakami) | [📂 Ver Repositório](https://github.com/Yagami-Murakami) |
+| Assistente virtual de vendas baseado em IA para geração de pitches, contorno de objeções comerciais e suporte consultivo em tempo real. | Automação e integração Serverless na nuvem AWS, implementando funções Lambda disparadas por eventos de buckets S3. |
+| `Python` `AI` `Prompt-Engineering` `API` | `Python` `AWS-Lambda` `Amazon-S3` `Serverless` |
+| [📂 Ver Repositório](https://github.com/Yagami-Murakami/copiloto-vendas-ia) | [📂 Ver Repositório](https://github.com/Yagami-Murakami/dio-lambda-s3-automation) |
 
-| 📡 Monitor de Telemetria de Sistema | 🔐 CLI de Mecanismo de Decodificação |
+| ⚙️ [PowerShell-Advanced-Support-Tool](https://github.com/Yagami-Murakami/PowerShell-Advanced-Support-Tool) | 🛡️ [simulador-malware-python](https://github.com/Yagami-Murakami/simulador-malware-python) |
 | :--- | :--- |
-| Painel em tempo real para telemetria de performance de hardware e monitoramento de sockets de rede. Fornece feedback instantâneo sobre uso de CPU/memória e tráfego. | Uma ferramenta de scanner CLI multithread altamente otimizada, projetada para auditar portas abertas, identificar vulnerabilidades de sistemas e validar credenciais. |
-| `React` `Socket.io` `Node.js` `Chart.js` | `Python` `Security` `Threading` `CLI` |
-| [📂 Ver Repositório](https://github.com/Yagami-Murakami) | [📂 Ver Repositório](https://github.com/Yagami-Murakami) |
+| Console utilitário avançado para suporte de TI corporativo, contendo automações locais de diagnóstico de SO e duplicação de discos. | Simulador educacional de scripts de malware em Python para estudo de vetores de ataque, assinaturas e comportamento defensivo. |
+| `PowerShell` `Windows` `SysAdmin` `Automation` | `Python` `Cyber-Security` `Lab-Testing` `Security-Audits` |
+| [📂 Ver Repositório](https://github.com/Yagami-Murakami/PowerShell-Advanced-Support-Tool) | [📂 Ver Repositório](https://github.com/Yagami-Murakami/simulador-malware-python) |
 
 ---
 

@@ -71,13 +71,13 @@
   <!-- Content -->
   <g transform="translate(50, 0)">
     <!-- Tagline -->
-    <text x="0" y="65" class="tagline">ARQUITETO DE SISTEMAS &amp; DESENVOLVEDOR FULL-STACK</text>
+    <text x="0" y="65" class="tagline">DESENVOLVEDOR PYTHON &amp; ESPEC. EM AUTOMAÇÃO</text>
     
     <!-- Title -->
     <text x="0" y="115" class="title">YAGAMI MURAKAMI</text>
     
     <!-- Subtitle -->
-    <text x="0" y="152" class="subtitle">Construindo aplicações seguras, escaláveis e de alta performance.</text>
+    <text x="0" y="152" class="subtitle">Convertendo ideias em código funcional e automatizando processos.</text>
     
     <!-- Badges / Info in SVG -->
     <text x="0" y="185" class="tagline" font-size="11">
