@@ -28,6 +28,70 @@ yagami@gibson:~$ cat operator_profile.log
 
 ---
 
+### 🕹️ GIBSON RETRO ARCADE // COME-COME
+
+```bash
+yagami@gibson:~$ ./play_arcade.sh --game pacman
+Connecting to ROM storage... OK.
+Booting Cabinet Emulator...
+  
+  ᗧ  •  •  •  🍬  •  •  •  👻  👻   [ LEVEL 01 ]
+
+[+] SCORE: 014820  //  [+] HIGH SCORE: 999950  //  [+] STATUS: RUNNING
+```
+
+---
+
+### 👥 THE COHORT NETWORK (THE CREW)
+
+```
+yagami@gibson:~$ show_active_nodes --crew
+OPERATOR             STATUS    SPECIALTY
+───────────────────────────────────────────────────────────────
+Zero Cool            ACTIVE    Kernel exploits, Dow Jones manipulation
+Acid Burn            ACTIVE    Cyberdeck design, high-level compiler optimization
+Cereal Killer        ACTIVE    Telephony phreaking, network traffic sniffing
+Lord Nikon           ACTIVE    Photographic memory, Gibson 3D data-node mapping
+Phantom Phreak       ACTIVE    Dial-tone replication, trunk-line routing bypass
+Yagami-Murakami      HOST      Full-stack architectures & Gibson vulnerability scanning
+```
+
+---
+
+### ☣️ DA VINCI EXTORTION SCHEME (MALWARE ANALYSIS)
+
+A snippet of the extortion virus injected by **The Plague** into the Ellingson Mineral Corporation mainframe, recovered by our cohort:
+
+```c
+/*
+ * Da Vinci Virus - Extortion Payload v1.995
+ * Targets: Ellingson Mineral Corp ballast automation systems.
+ * Objective: Capsize oil fleet unless decryption keys are provided.
+ */
+#include <ellingson_ballast.h>
+
+void trigger_ballast_overload() {
+    int current_tilt = 12;
+    int capsize_limit = 45; // Tanker tips over at 45 degrees
+    
+    while (current_tilt < capsize_limit) {
+        flood_ballast_valves(TANKER_FLEET_ID, 11);
+        current_tilt += 11;
+        
+        // Check if operator issues relief valve vent command
+        if (check_operator_override() == "VENT") {
+            vent_ballast_valves(TANKER_FLEET_ID);
+            log_status("BALLAST TANKS VENTED. SYSTEM STABILIZED.");
+            return; // Virus bypassed!
+        }
+    }
+    
+    capsize_fleet(TANKER_FLEET_ID);
+}
+```
+
+---
+
 ### 🛡️ CYBERNETIC SPECIALTIES (SKILLS)
 
 #### 💻 Programming Languages & Frameworks
