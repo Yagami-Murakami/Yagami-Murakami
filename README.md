@@ -55,11 +55,14 @@ Abaixo estão os meus principais projetos ativos no GitHub, com foco em intelig�
 
 ### 📫 Entre em Contato
 
-Sinta-se à vontade para entrar em contato para discutir oportunidades de colaboração, design de sistemas ou desenvolvimento de software full-stack:
+Sinta-se à vontade para entrar em contato para discutir oportunidades de colaboração, design de sistemas ou desenvolvimento de software:
 
 <p align="left">
   <a href="mailto:sixvap@gmail.com">
     <img src="https://img.shields.io/badge/E--mail-sixvap@gmail.com-0b0f19?style=flat-square&amp;logo=gmail&amp;logoColor=38bdf8&amp;labelColor=0b0f19" alt="E-mail" />
+  </a>
+  <a href="https://www.linkedin.com/in/antônio-jonas-lourenço-cruz-yagami" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Antônio%20Jonas-0b0f19?style=flat-square&amp;logo=linkedin&amp;logoColor=38bdf8&amp;labelColor=0b0f19" alt="LinkedIn" />
   </a>
   <a href="https://github.com/Yagami-Murakami">
     <img src="https://img.shields.io/badge/GitHub-Yagami--Murakami-0b0f19?style=flat-square&amp;logo=github&amp;logoColor=38bdf8&amp;labelColor=0b0f19" alt="GitHub" />
