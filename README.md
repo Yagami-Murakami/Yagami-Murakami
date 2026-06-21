@@ -28,8 +28,8 @@ Abaixo estão os meus principais projetos ativos no GitHub, com foco em intelig�
 
 | 🤖 [copiloto-vendas-ia](https://github.com/Yagami-Murakami/copiloto-vendas-ia) | 🎮 [nes-js-puro-v11](https://github.com/Yagami-Murakami/nes-js-puro-v11) |
 | :--- | :--- |
-| Assistente virtual de vendas baseado em IA para geração de pitches, contorno de objeções comerciais e suporte consultivo em tempo real. | Emulador de NES escrito em JavaScript puro no navegador. Simula ciclos de CPU 6502, rendering PPU por scanline com split scroll (HUD do Mario) e som com Web Audio API. |
-| `Python` `AI` `Prompt-Engineering` `API` | `JavaScript` `PPU-Rendering` `CPU-6502` `Web-Audio` |
+| Assistente virtual de vendas baseado em IA para geração de pitches, contorno de objeções comerciais e suporte consultivo em tempo real. | Emulador de NES em JS puro com interface de TV CRT, descompactação de ZIP/7-Zip via WebAssembly (Wasm), APU de som chiptune e mappers NROM, MMC1, MMC3, UxROM e mais. |
+| `Python` `AI` `Prompt-Engineering` `API` | `JavaScript` `WebAssembly` `PPU-Rendering` `Web-Audio` |
 | [📂 Ver Repositório](https://github.com/Yagami-Murakami/copiloto-vendas-ia) | [📂 Ver Repositório](https://github.com/Yagami-Murakami/nes-js-puro-v11) |
 
 | ⚙️ [PowerShell-Advanced-Support-Tool](https://github.com/Yagami-Murakami/PowerShell-Advanced-Support-Tool) | ☁️ [dio-lambda-s3-automation](https://github.com/Yagami-Murakami/dio-lambda-s3-automation) |
