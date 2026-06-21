@@ -26,17 +26,17 @@ Sou **Desenvolvedor Python** e **Especialista em Automação de Sistemas** focad
 
 Abaixo estão os meus principais projetos ativos no GitHub, com foco em inteligência artificial, automação em nuvem, ferramentas de administração e segurança:
 
-| 🤖 [copiloto-vendas-ia](https://github.com/Yagami-Murakami/copiloto-vendas-ia) | ☁️ [dio-lambda-s3-automation](https://github.com/Yagami-Murakami/dio-lambda-s3-automation) |
+| 🤖 [copiloto-vendas-ia](https://github.com/Yagami-Murakami/copiloto-vendas-ia) | 🎮 [nes-js-puro-v11](https://github.com/Yagami-Murakami/Yagami-Murakami/tree/main/nes-js-puro-v11) |
 | :--- | :--- |
-| Assistente virtual de vendas baseado em IA para geração de pitches, contorno de objeções comerciais e suporte consultivo em tempo real. | Automação e integração Serverless na nuvem AWS, implementando funções Lambda disparadas por eventos de buckets S3. |
-| `Python` `AI` `Prompt-Engineering` `API` | `Python` `AWS-Lambda` `Amazon-S3` `Serverless` |
-| [📂 Ver Repositório](https://github.com/Yagami-Murakami/copiloto-vendas-ia) | [📂 Ver Repositório](https://github.com/Yagami-Murakami/dio-lambda-s3-automation) |
+| Assistente virtual de vendas baseado em IA para geração de pitches, contorno de objeções comerciais e suporte consultivo em tempo real. | Emulador de NES escrito em JavaScript puro no navegador. Simula ciclos de CPU 6502, rendering PPU por scanline com split scroll (HUD do Mario) e som com Web Audio API. |
+| `Python` `AI` `Prompt-Engineering` `API` | `JavaScript` `PPU-Rendering` `CPU-6502` `Web-Audio` |
+| [📂 Ver Repositório](https://github.com/Yagami-Murakami/copiloto-vendas-ia) | [📂 Ver Projeto](https://github.com/Yagami-Murakami/Yagami-Murakami/tree/main/nes-js-puro-v11) |
 
-| ⚙️ [PowerShell-Advanced-Support-Tool](https://github.com/Yagami-Murakami/PowerShell-Advanced-Support-Tool) | 🛡️ [simulador-malware-python](https://github.com/Yagami-Murakami/simulador-malware-python) |
+| ⚙️ [PowerShell-Advanced-Support-Tool](https://github.com/Yagami-Murakami/PowerShell-Advanced-Support-Tool) | ☁️ [dio-lambda-s3-automation](https://github.com/Yagami-Murakami/dio-lambda-s3-automation) |
 | :--- | :--- |
-| Console utilitário avançado para suporte de TI corporativo, contendo automações locais de diagnóstico de SO e duplicação de discos. | Simulador educacional de scripts de malware em Python para estudo de vetores de ataque, assinaturas e comportamento defensivo. |
-| `PowerShell` `Windows` `SysAdmin` `Automation` | `Python` `Cyber-Security` `Lab-Testing` `Security-Audits` |
-| [📂 Ver Repositório](https://github.com/Yagami-Murakami/PowerShell-Advanced-Support-Tool) | [📂 Ver Repositório](https://github.com/Yagami-Murakami/simulador-malware-python) |
+| Console utilitário avançado para suporte de TI corporativo, contendo automações locais de diagnóstico de SO e duplicação de discos. | Automação e integração Serverless na nuvem AWS, implementando funções Lambda disparadas por eventos de buckets S3. |
+| `PowerShell` `Windows` `SysAdmin` `Automation` | `Python` `AWS-Lambda` `Amazon-S3` `Serverless` |
+| [📂 Ver Repositório](https://github.com/Yagami-Murakami/PowerShell-Advanced-Support-Tool) | [📂 Ver Repositório](https://github.com/Yagami-Murakami/dio-lambda-s3-automation) |
 
 ---
 
