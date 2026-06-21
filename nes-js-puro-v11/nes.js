@@ -99,6 +99,41 @@ class Cartridge {
     if (![0, 4].includes(this.mapper)) {
       throw new Error("Mapper ainda não suportado nesta versão: " + this.mapper);
     }
+
+    this.profile = this.detectProfile();
+  }
+
+  detectProfile() {
+    // Perfis automáticos para evitar que correções específicas de um jogo
+    // quebrem outro. A regra principal:
+    // - Mapper 4/MMC3 fica com o comportamento gráfico da v8, que estava bom no Shadow.
+    // - Super Mario Bros recebe correções específicas de sprite zero/HUD.
+    if (this.mapper === 0 && this.prgBanks === 2 && this.chrBanks === 1) {
+      // Super Mario Bros geralmente é NROM-256: PRG 2, CHR 1, mapper 0.
+      // Sem depender de nome de arquivo, porque o loader recebe só bytes.
+      return {
+        name: "smb_nrom",
+        lockTopStatusBarScroll: true,
+        statusBarHeight: 32,
+        spriteZeroFallback: true
+      };
+    }
+
+    if (this.mapper === 4) {
+      return {
+        name: "mmc3_v8_safe",
+        lockTopStatusBarScroll: false,
+        statusBarHeight: 0,
+        spriteZeroFallback: false
+      };
+    }
+
+    return {
+      name: "generic",
+      lockTopStatusBarScroll: false,
+      statusBarHeight: 0,
+      spriteZeroFallback: false
+    };
   }
 
   cpuRead(addr) {
@@ -857,7 +892,6 @@ class Bus {
     this.controller = 0;
     this.controllerShift = 0;
     this.controllerStrobe = 0;
-    this.controllerReadCount = 0;
   }
 
   read(addr) {
@@ -872,13 +906,8 @@ class Bus {
         return (this.controller & 0x80) ? 1 : 0;
       }
 
-      if (this.controllerReadCount >= 8) {
-        return 1;
-      }
-
       const value = (this.controllerShift & 0x80) ? 1 : 0;
       this.controllerShift = (this.controllerShift << 1) & 0xFF;
-      this.controllerReadCount++;
       return value;
     }
 
@@ -915,17 +944,8 @@ class Bus {
     }
 
     if (addr === 0x4016) {
-      const oldStrobe = this.controllerStrobe;
       this.controllerStrobe = value & 1;
-
-      if (this.controllerStrobe) {
-        this.controllerShift = this.controller;
-        this.controllerReadCount = 0;
-      } else if (oldStrobe) {
-        // Ao descer de 1 para 0, mantém o estado capturado e começa a leitura serial.
-        this.controllerReadCount = 0;
-      }
-
+      if (this.controllerStrobe) this.controllerShift = this.controller;
       return;
     }
 
@@ -1432,15 +1452,11 @@ class PPU {
 
     this.frameRendered = false;
 
-    // Fallback de compatibilidade:
-    // Super Mario Bros usa sprite zero hit para sincronizar scroll.
-    // Se a PPU simplificada não detectar no momento exato, o jogo pode ficar preso.
-    this.spriteZeroFallback = true;
-
-    // Compatibilidade para jogos como Super Mario Bros:
-    // o HUD no topo usa scroll separado do cenário.
-    this.lockTopStatusBarScroll = true;
-    this.statusBarHeight = 32;
+    // v14: perfil inteligente por ROM.
+    // Por padrão, tudo fica desligado para não quebrar jogos MMC3.
+    this.spriteZeroFallback = false;
+    this.lockTopStatusBarScroll = false;
+    this.statusBarHeight = 0;
   }
 
   reset() {
@@ -1461,7 +1477,26 @@ class PPU {
     this.frame = 0;
     this.nmiRequested = false;
     this.frameRendered = false;
+
+    // Recarrega o perfil da ROM a cada reset.
+    this.applyGameProfile();
+
     bgOpaque.fill(0);
+  }
+
+  applyGameProfile() {
+    const profile = this.bus.cart && this.bus.cart.profile
+      ? this.bus.cart.profile
+      : {
+          name: "generic",
+          lockTopStatusBarScroll: false,
+          statusBarHeight: 0,
+          spriteZeroFallback: false
+        };
+
+    this.spriteZeroFallback = !!profile.spriteZeroFallback;
+    this.lockTopStatusBarScroll = !!profile.lockTopStatusBarScroll;
+    this.statusBarHeight = profile.statusBarHeight || 0;
   }
 
   paletteMirrorIndex(addr) {
@@ -1629,16 +1664,12 @@ class PPU {
       this.cycles += step;
       ppuCycles -= step;
 
-      // Sprite zero hit aproximado no momento em que o pixel passa.
-      // Isso é essencial para Super Mario Bros, que espera esse bit em $2002.
-      this.checkSpriteZeroHitDuringCycles(oldCycles, this.cycles);
-
-      // Fallback de compatibilidade do SMB: se a detecção real falhar,
-      // marca o hit depois da área do HUD para evitar loop infinito.
+      // Fallback específico de Super Mario Bros.
+      // Desligado para MMC3/Shadow para manter a renderização boa da v8.
       if (
         this.spriteZeroFallback &&
         !(this.status & 0x40) &&
-        this.scanline >= this.statusBarHeight &&
+        this.scanline >= (this.statusBarHeight || 32) &&
         this.scanline < 240 &&
         oldCycles < 240 &&
         this.cycles >= 240 &&
@@ -1686,6 +1717,19 @@ class PPU {
     }
   }
 
+  maybeForceSpriteZeroHit() {
+    if (!this.spriteZeroFallback) return;
+    if (this.status & 0x40) return;
+    if ((this.mask & 0x18) !== 0x18) return;
+
+    const minLine = this.statusBarHeight || 32;
+    if (this.scanline < minLine || this.scanline >= 240) return;
+
+    // Fallback específico de SMB:
+    // evita o loop infinito esperando sprite zero hit, sem afetar Shadow/MMC3.
+    this.status |= 0x40;
+  }
+
   getBgPixelForLine(x, y) {
     const bgColor = this.ppuRead(0x3F00) & 0x3F;
 
@@ -1708,18 +1752,9 @@ class PPU {
     let effectiveScrollY = this.scrollY;
     let baseNt = this.scrollNt & 0x03;
 
-    // Correção do HUD/status bar:
-    // Super Mario Bros mantém o topo da tela parado e muda o scroll depois
-    // usando sprite zero hit. Como esta PPU ainda é simplificada, travamos
-    // as primeiras linhas para não aplicar o scroll do cenário no texto.
-    if (
-      this.lockTopStatusBarScroll &&
-      this.bus.cart &&
-      this.bus.cart.mapper === 0 &&
-      this.bus.cart.prgBanks === 2 &&
-      this.bus.cart.chrBanks === 1 &&
-      y < this.statusBarHeight
-    ) {
+    // HUD fix inteligente:
+    // só aplica para perfil SMB/NROM. Shadow/MMC3 fica com a PPU v14 original.
+    if (this.lockTopStatusBarScroll && y < this.statusBarHeight) {
       effectiveScrollX = 0;
       effectiveScrollY = 0;
       baseNt = 0;
@@ -1767,81 +1802,6 @@ class PPU {
       colorIndex: this.ppuRead(0x3F00 + paletteId * 4 + colorBits) & 0x3F,
       opaque: true
     };
-  }
-
-  maybeForceSpriteZeroHit() {
-    if (!this.spriteZeroFallback) return;
-    if (this.status & 0x40) return;
-
-    // Só força quando a renderização está ligada e já passou da região do HUD.
-    // Isso evita travar jogos que esperam o sprite zero hit e é especialmente útil
-    // para Super Mario Bros.
-    if ((this.mask & 0x18) !== 0x18) return;
-    if (this.scanline < this.statusBarHeight || this.scanline >= 240) return;
-
-    // Se o sprite 0 real estiver escondido fora da tela, ainda assim o SMB pode
-    // ficar preso por causa do timing simplificado. Então usamos uma janela segura.
-    this.status |= 0x40;
-  }
-
-  getSpriteZeroOpaquePixel(x, y) {
-    if (!(this.mask & 0x10)) return false;
-    if (x >= 255) return false;
-    if (x < 8 && (!(this.mask & 0x04) || !(this.mask & 0x02))) return false;
-
-    const sy = this.oam[0] + 1;
-    const tile = this.oam[1];
-    const attr = this.oam[2];
-    const sx = this.oam[3];
-
-    const spriteSize16 = !!(this.ctrl & 0x20);
-    const spriteHeight = spriteSize16 ? 16 : 8;
-
-    if (x < sx || x >= sx + 8 || y < sy || y >= sy + spriteHeight) return false;
-
-    let px = x - sx;
-    let py = y - sy;
-
-    if (attr & 0x40) px = 7 - px;
-    if (attr & 0x80) py = spriteHeight - 1 - py;
-
-    let patternAddr;
-
-    if (spriteSize16) {
-      const table = (tile & 1) ? 0x1000 : 0x0000;
-      const baseTile = tile & 0xFE;
-      const tileOffset = py >= 8 ? 1 : 0;
-      patternAddr = table + (baseTile + tileOffset) * 16 + (py & 7);
-    } else {
-      const table = (this.ctrl & 0x08) ? 0x1000 : 0x0000;
-      patternAddr = table + tile * 16 + py;
-    }
-
-    const lo = this.ppuRead(patternAddr);
-    const hi = this.ppuRead(patternAddr + 8);
-    const bit = 7 - px;
-    const colorBits = ((lo >> bit) & 1) | (((hi >> bit) & 1) << 1);
-
-    return colorBits !== 0;
-  }
-
-  checkSpriteZeroHitDuringCycles(oldCycle, newCycle) {
-    if (this.status & 0x40) return;
-    if (!(this.mask & 0x18)) return;
-    if (this.scanline < 0 || this.scanline >= 240) return;
-
-    const startX = Math.max(0, oldCycle);
-    const endX = Math.min(256, newCycle);
-
-    for (let x = startX; x < endX; x++) {
-      if (!this.getSpriteZeroOpaquePixel(x, this.scanline)) continue;
-
-      const bg = this.getBgPixelForLine(x, this.scanline);
-      if (bg.opaque) {
-        this.status |= 0x40;
-        return;
-      }
-    }
   }
 
   renderBackgroundLine(y) {
@@ -1982,13 +1942,14 @@ class NES {
     this.bus.cart = new Cartridge(bytes);
     this.bus.ram.fill(0);
     this.ppu.reset();
+    this.ppu.applyGameProfile();
     this.apu.reset();
     this.cpu.reset();
 
     this.statusBase =
-      `Status: ROM carregada | PRG: ${this.bus.cart.prgBanks} | CHR: ${this.bus.cart.chrBanks} | Mapper: ${this.bus.cart.mapper}${this.bus.cart.mapper === 4 ? " / MMC3 experimental" : ""} | Mirror: ${this.bus.cart.mirroring}`;
+      `Status: ROM carregada | PRG: ${this.bus.cart.prgBanks} | CHR: ${this.bus.cart.chrBanks} | Mapper: ${this.bus.cart.mapper}${this.bus.cart.mapper === 4 ? " / MMC3 experimental" : ""} | Mirror: ${this.bus.cart.mirroring} | Perfil: ${this.bus.cart.profile.name}`;
 
-    statusEl.textContent = this.statusBase + " | Som: APU v7 + PPU v11";
+    statusEl.textContent = this.statusBase + " | Som: APU v7 + PPU v14";
   }
 
   reset() {
@@ -2045,7 +2006,7 @@ class NES {
 
       if (this.bus.cart) {
         statusEl.textContent =
-          `${this.statusBase} | FPS: ${this.fps} | Som: ${this.apu.enabled ? "APU v7 ativo | PPU v11" : "clique em Rodar para ativar"}`;
+          `${this.statusBase} | FPS: ${this.fps} | Som: ${this.apu.enabled ? "APU v7 ativo | PPU v14" : "clique em Rodar para ativar"}`;
       }
     }
 
