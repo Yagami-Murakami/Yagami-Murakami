@@ -28,25 +28,24 @@
 
 ---
 
-### 🛠️ Stack principal
+<h3 align="center">🛠️ Stack principal</h3>
 
-**Linguagens & Scripting**
+<div align="center">
+  <p><b>Linguagens & Scripting</b></p>
+  <p>
+    <img src="https://skillicons.dev/icons?i=python,js,ts,powershell,bash" alt="Linguagens e scripting" />
+  </p>
 
-<p>
-  <img src="https://skillicons.dev/icons?i=python,js,ts,powershell,bash" alt="Linguagens e scripting" />
-</p>
+  <p><b>Backend, Dados & Automação</b></p>
+  <p>
+    <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,postgres,docker" alt="Backend, dados e automação" />
+  </p>
 
-**Backend, Dados & Automação**
-
-<p>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,postgres,docker" alt="Backend, dados e automação" />
-</p>
-
-**Cloud, Sistemas & Ferramentas**
-
-<p>
-  <img src="https://skillicons.dev/icons?i=aws,linux,debian,git,vscode" alt="Cloud, sistemas e ferramentas" />
-</p>
+  <p><b>Cloud, Sistemas & Ferramentas</b></p>
+  <p>
+    <img src="https://skillicons.dev/icons?i=aws,linux,debian,git,vscode" alt="Cloud, sistemas e ferramentas" />
+  </p>
+</div>
 
 ---
 
