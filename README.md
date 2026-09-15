@@ -48,6 +48,10 @@ Abaixo estão os meus principais projetos ativos no GitHub, com foco em intelig�
 
 **Áreas de atuação:** `Python` · `Automação` · `IA` · `PowerShell` · `Bash` · `AWS` · `Linux` · `DevSecOps`
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Yagami-Murakami/Yagami-Murakami/output/github-contribution-grid-snake-dark.svg" alt="Animação da cobrinha das contribuições do GitHub" />
+</p>
+
 ---
 
 ### 📫 Entre em Contato
