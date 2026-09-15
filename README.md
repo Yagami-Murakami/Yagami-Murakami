@@ -42,8 +42,6 @@ Abaixo estão os meus principais projetos ativos no GitHub, com foco em intelig�
 
 ### 📈 Atividade no GitHub
 
-Em vez de cards externos sujeitos a limite de requisições, esta seção usa apenas links nativos do GitHub para permanecer sempre disponível.
-
 | 🔎 Perfil & atividade | 📚 Repositórios | ⭐ Projetos em destaque |
 | :---: | :---: | :---: |
 | [Ver atividade e contribuições](https://github.com/Yagami-Murakami) | [Explorar todos os repositórios](https://github.com/Yagami-Murakami?tab=repositories) | [Ver repositórios fixados](https://github.com/Yagami-Murakami#user-activity-overview) |
