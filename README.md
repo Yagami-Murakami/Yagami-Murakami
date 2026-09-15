@@ -40,22 +40,15 @@ Abaixo estão os meus principais projetos ativos no GitHub, com foco em intelig�
 
 ---
 
-### 📈 Métricas do Ecossistema GitHub
+### 📈 Atividade no GitHub
 
-<p align="center">
-  <a href="https://github.com/Yagami-Murakami">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Yagami-Murakami&amp;theme=github_dark" alt="Estatísticas do GitHub do Yagami" width="48%" />
-  </a>
-  <a href="https://github.com/Yagami-Murakami">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Yagami-Murakami&amp;theme=github_dark&amp;utcOffset=-3" alt="Horários mais produtivos do Yagami" width="48%" />
-  </a>
-</p>
+Em vez de cards externos sujeitos a limite de requisições, esta seção usa apenas links nativos do GitHub para permanecer sempre disponível.
 
-<p align="center">
-  <a href="https://github.com/Yagami-Murakami">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Yagami-Murakami&amp;theme=github_dark" alt="Resumo das contribuições do GitHub do Yagami" width="98%" />
-  </a>
-</p>
+| 🔎 Perfil & atividade | 📚 Repositórios | ⭐ Projetos em destaque |
+| :---: | :---: | :---: |
+| [Ver atividade e contribuições](https://github.com/Yagami-Murakami) | [Explorar todos os repositórios](https://github.com/Yagami-Murakami?tab=repositories) | [Ver repositórios fixados](https://github.com/Yagami-Murakami#user-activity-overview) |
+
+**Áreas de atuação:** `Python` · `Automação` · `IA` · `PowerShell` · `Bash` · `AWS` · `Linux` · `DevSecOps`
 
 ---
 
