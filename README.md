@@ -44,10 +44,16 @@ Abaixo estão os meus principais projetos ativos no GitHub, com foco em intelig�
 
 <p align="center">
   <a href="https://github.com/Yagami-Murakami">
-    <img src="https://github-readme-stats.vercel.app/api?username=Yagami-Murakami&amp;show_icons=true&amp;bg_color=0b0f19&amp;title_color=38bdf8&amp;icon_color=818cf8&amp;text_color=94a3b8&amp;border_color=1e293b" alt="Estatísticas do GitHub do Yagami" width="48%" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Yagami-Murakami&amp;theme=github_dark" alt="Estatísticas do GitHub do Yagami" width="48%" />
   </a>
   <a href="https://github.com/Yagami-Murakami">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Yagami-Murakami&amp;theme=tokyonight&amp;bg_color=0b0f19&amp;ring=38bdf8&amp;fire=818cf8&amp;currStreakNum=94a3b8&amp;sideNums=94a3b8&amp;stroke=1e293b&amp;currStreakLabel=38bdf8&amp;sideLabels=64748b" alt="Status de Contribuição do Yagami" width="48%" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Yagami-Murakami&amp;theme=github_dark&amp;utcOffset=-3" alt="Horários mais produtivos do Yagami" width="48%" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Yagami-Murakami">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Yagami-Murakami&amp;theme=github_dark" alt="Resumo das contribuições do GitHub do Yagami" width="98%" />
   </a>
 </p>
 
